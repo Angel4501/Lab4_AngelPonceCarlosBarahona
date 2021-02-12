@@ -10,7 +10,9 @@ public class Jugadores {
     public Jugadores() {
     }
 
-    public Jugadores(String nombre, String apodo, String numcamiseta, String equipofutfav, String equipobalfav, String jugfav, String mayorEdad, String nacimiento, int NumeroEstrellas, String atacar) {
+    public Jugadores(String nombre, String apodo, String numcamiseta, String equipofutfav, 
+            String equipobalfav, String jugfav, String mayorEdad, String nacimiento, 
+            int NumeroEstrellas, String atacar) {
         this.nombre = nombre;
         this.apodo = apodo;
         this.numcamiseta = numcamiseta;
@@ -23,8 +25,6 @@ public class Jugadores {
         this.atacar = atacar;
     }
 
-    
-    
     public String getNombre() {
         return nombre;
     }
@@ -94,7 +94,9 @@ public class Jugadores {
     }
 
     public void setNumeroEstrellas(int NumeroEstrellas) {
-        this.NumeroEstrellas = NumeroEstrellas;
+        if(NumeroEstrellas>=1 && NumeroEstrellas<=5){
+            this.NumeroEstrellas = NumeroEstrellas;
+        }
     }
 
     public String getAtacar() {
@@ -105,6 +107,10 @@ public class Jugadores {
         this.atacar = atacar;
     }
 
+    public void Atacar(){
+        System.out.println();
+    }
+    
     @Override
     public String toString() {
         return "Jugadores{" + "nombre=" + nombre 
