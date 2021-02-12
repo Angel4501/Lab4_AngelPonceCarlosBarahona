@@ -58,6 +58,7 @@ public class Tiradores extends Jugadores {
             //(T2P+MB)*0.95 * Núm. Estrellas/10
             double prob = (getTirodedos() + getManejodebalon()) * 0.95 * super.getNumeroEstrellas() / 10;
             int ran=1+r.nextInt(100);
+            System.out.println("Hizo tiro de 2 puntos");
             if (ran >= 1 && ran <= prob) {
                 System.out.println("¡¡¡Anotó!!!");
             } else {
@@ -68,6 +69,7 @@ public class Tiradores extends Jugadores {
             // (TT+MB)*0.90 * Núm. Estrellas/10
             double prob = (getTirodetres() + getManejodebalon()) * 0.90 * super.getNumeroEstrellas() / 10;
             int ran=1+r.nextInt(100);
+            System.out.println("Hizo tiro de tres puntos");
             if (ran >= 1 && ran <= prob) {
                 System.out.println("¡¡¡Anotó!!!");
             } else {
