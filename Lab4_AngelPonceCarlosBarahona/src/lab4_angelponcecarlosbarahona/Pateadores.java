@@ -10,7 +10,7 @@ public class Pateadores extends Jugadores{
             String nombre, String apodo, String numcamiseta, String equipofutfav, String equipobalfav, 
             String jugfav, String mayorEdad, String nacimiento, int NumeroEstrellas, String atacar) {
         super(nombre, apodo, numcamiseta, equipofutfav, equipobalfav, jugfav, mayorEdad, nacimiento, 
-                NumeroEstrellas, atacar);
+                NumeroEstrellas);
         this.HabilidadPateadora = HabilidadPateadora;
         this.fuerza = fuerza;
         this.habilidadRegate = habilidadRegate;

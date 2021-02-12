@@ -5,14 +5,13 @@ public class Jugadores {
     private String nombre, apodo, numcamiseta, equipofutfav, equipobalfav, jugfav, mayorEdad; //si es mayor de edad o no
     private String nacimiento;
     private int NumeroEstrellas;
-    private String atacar; //si o no
 
     public Jugadores() {
     }
 
     public Jugadores(String nombre, String apodo, String numcamiseta, String equipofutfav, 
             String equipobalfav, String jugfav, String mayorEdad, String nacimiento, 
-            int NumeroEstrellas, String atacar) {
+            int NumeroEstrellas) {
         this.nombre = nombre;
         this.apodo = apodo;
         this.numcamiseta = numcamiseta;
@@ -22,7 +21,6 @@ public class Jugadores {
         this.mayorEdad = mayorEdad;
         this.nacimiento = nacimiento;
         this.NumeroEstrellas = NumeroEstrellas;
-        this.atacar = atacar;
     }
 
     public String getNombre() {
@@ -99,14 +97,6 @@ public class Jugadores {
         }
     }
 
-    public String getAtacar() {
-        return atacar;
-    }
-
-    public void setAtacar(String atacar) {
-        this.atacar = atacar;
-    }
-
     public void Atacar(){
         System.out.println();
     }
@@ -121,8 +111,7 @@ public class Jugadores {
                 + ", jugfav=" + jugfav 
                 + ", mayorEdad=" + mayorEdad 
                 + ", nacimiento=" + nacimiento 
-                + ", NumeroEstrellas=" + NumeroEstrellas 
-                + ", atacar=" + atacar + '}';
+                + ", NumeroEstrellas=" + NumeroEstrellas;
     }
     
     
