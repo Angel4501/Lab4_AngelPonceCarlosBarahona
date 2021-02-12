@@ -11,9 +11,9 @@ public class Pateadores extends Jugadores{
             String jugfav, String mayorEdad, String nacimiento, int NumeroEstrellas, String atacar) {
         super(nombre, apodo, numcamiseta, equipofutfav, equipobalfav, jugfav, mayorEdad, nacimiento, 
                 NumeroEstrellas);
-        this.HabilidadPateadora = HabilidadPateadora;
-        this.fuerza = fuerza;
-        this.habilidadRegate = habilidadRegate;
+        this.setHabilidadPateadora(HabilidadPateadora);
+        this.setFuerza(fuerza);
+        this.setHabilidadRegate(habilidadRegate);
     }
 
     public int getHabilidadPateadora() {
@@ -21,6 +21,7 @@ public class Pateadores extends Jugadores{
     }
 
     public void setHabilidadPateadora(int HabilidadPateadora) {
+        if(HabilidadPateadora>=1 && HabilidadPateadora<=100)
         this.HabilidadPateadora = HabilidadPateadora;
     }
 
@@ -29,6 +30,7 @@ public class Pateadores extends Jugadores{
     }
 
     public void setFuerza(int fuerza) {
+        if(fuerza>=1 && fuerza<=100)
         this.fuerza = fuerza;
     }
 
@@ -37,6 +39,7 @@ public class Pateadores extends Jugadores{
     }
 
     public void setHabilidadRegate(int habilidadRegate) {
+        if(habilidadRegate>=1 && habilidadRegate<=100)
         this.habilidadRegate = habilidadRegate;
     }
     
@@ -55,7 +58,9 @@ public class Pateadores extends Jugadores{
 
     @Override
     public String toString() {
-        return "Pateadores{" + "HabilidadPateadora=" + HabilidadPateadora + ", fuerza=" + fuerza + ", habilidadRegate=" + habilidadRegate + '}';
+        return "Pateadores{" + "HabilidadPateadora=" + getHabilidadPateadora()
+                + ", fuerza=" + getFuerza() 
+                + ", habilidadRegate=" + getHabilidadRegate() + '}';
     }
 
 }

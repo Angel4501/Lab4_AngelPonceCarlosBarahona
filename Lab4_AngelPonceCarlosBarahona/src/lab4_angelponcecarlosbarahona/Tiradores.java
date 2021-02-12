@@ -14,9 +14,9 @@ public class Tiradores extends Jugadores {
             String jugfav, String mayorEdad, String nacimiento, int NumeroEstrellas, String atacar) {
         super(nombre, apodo, numcamiseta, equipofutfav, equipobalfav, jugfav, mayorEdad, nacimiento,
                 NumeroEstrellas);
-        this.tirodetres = tirodetres;
-        this.tirodedos = tirodedos;
-        this.manejodebalon = manejodebalon;
+        this.setTirodetres(tirodetres);
+        this.setTirodedos(tirodedos);
+        this.setManejodebalon(manejodebalon);
     }
 
     public int getTirodetres() {
@@ -24,6 +24,7 @@ public class Tiradores extends Jugadores {
     }
 
     public void setTirodetres(int tirodetres) {
+        if(tirodetres>=1 && tirodetres<=100)
         this.tirodetres = tirodetres;
     }
 
@@ -32,6 +33,7 @@ public class Tiradores extends Jugadores {
     }
 
     public void setTirodedos(int tirodedos) {
+        if(tirodedos>=1 && tirodedos<=100)
         this.tirodedos = tirodedos;
     }
 
@@ -40,6 +42,7 @@ public class Tiradores extends Jugadores {
     }
 
     public void setManejodebalon(int manejodebalon) {
+        if(manejodebalon>=1 &&  manejodebalon<=100)
         this.manejodebalon = manejodebalon;
     }
 
@@ -80,7 +83,8 @@ public class Tiradores extends Jugadores {
 
     @Override
     public String toString() {
-        return "Tiradores{" + "tirodetres=" + tirodetres + ", tirodedos=" + tirodedos + ", manejodebalon=" + manejodebalon + '}';
+        return "Tiradores{" + "tirodetres=" + getTirodetres() + ", tiro de dos=" + getTirodedos() 
+                + ", manejodebalon=" + getManejodebalon() + '}';
     }
 
 }

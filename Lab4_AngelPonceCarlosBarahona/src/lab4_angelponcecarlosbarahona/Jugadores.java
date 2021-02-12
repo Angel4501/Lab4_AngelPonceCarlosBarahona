@@ -20,7 +20,7 @@ public class Jugadores {
         this.jugfav = jugfav;
         this.mayorEdad = mayorEdad;
         this.nacimiento = nacimiento;
-        this.NumeroEstrellas = NumeroEstrellas;
+        this.setNumeroEstrellas(NumeroEstrellas);
     }
 
     public String getNombre() {
@@ -111,7 +111,7 @@ public class Jugadores {
                 + ", jugfav=" + jugfav 
                 + ", mayorEdad=" + mayorEdad 
                 + ", nacimiento=" + nacimiento 
-                + ", NumeroEstrellas=" + NumeroEstrellas;
+                + ", NumeroEstrellas=" + getNumeroEstrellas();
     }
     
     

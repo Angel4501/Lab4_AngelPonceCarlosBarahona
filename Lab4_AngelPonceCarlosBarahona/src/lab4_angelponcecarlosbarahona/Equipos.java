@@ -90,6 +90,19 @@ public class Equipos {
     public void setJugadores(ArrayList<Jugadores> jugadores) {
         this.jugadores = jugadores;
     }
+
+    @Override
+    public String toString() {
+        return "Equipos{" + "nombre=" + nombre 
+                + ", estadio=" + estadio 
+                + ", pais=" + pais 
+                + ", nombreEntrenador=" + nombreEntrenador 
+                + ", nombreDuen=" + nombreDuen 
+                + ", nombreMascota=" + nombreMascota 
+                + ", fechaCreacion=" + fechaCreacion 
+                + ", color=" + color 
+                + ", jugadores=" + jugadores + '}';
+    }
     
     
     
