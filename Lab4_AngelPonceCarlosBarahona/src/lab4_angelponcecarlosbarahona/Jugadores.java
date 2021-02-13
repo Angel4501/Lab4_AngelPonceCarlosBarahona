@@ -1,7 +1,6 @@
 package lab4_angelponcecarlosbarahona;
 
 public class Jugadores {
-    
     private String nombre, apodo, numcamiseta, equipofutfav, equipobalfav, jugfav, mayorEdad; //si es mayor de edad o no
     private String nacimiento;
     private int NumeroEstrellas;
@@ -97,8 +96,8 @@ public class Jugadores {
         }
     }
 
-    public void Atacar(){
-        System.out.println();
+    public boolean Atacar(){
+        return false;
     }
     
     @Override

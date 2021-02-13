@@ -47,7 +47,7 @@ public class Tiradores extends Jugadores {
     }
 
     @Override
-    public void Atacar() {
+    public boolean Atacar() {
         System.out.println("Tiro de dos o de 3 puntos?");
         System.out.println("1. De 2");
         System.out.println("2. De 3");
@@ -64,8 +64,10 @@ public class Tiradores extends Jugadores {
             System.out.println("Hizo tiro de 2 puntos");
             if (ran >= 1 && ran <= prob) {
                 System.out.println("¡¡¡Anotó!!!");
+                return true;
             } else {
                 System.out.println("...No anotó...");
+                return false;
             }
         } 
         else if (opc == 2) {
@@ -75,9 +77,14 @@ public class Tiradores extends Jugadores {
             System.out.println("Hizo tiro de tres puntos");
             if (ran >= 1 && ran <= prob) {
                 System.out.println("¡¡¡Anotó!!!");
+                return true;
             } else {
                 System.out.println("...No anotó...");
+                return false;
             }
+        }
+        else{
+            return false;
         }
     }
 

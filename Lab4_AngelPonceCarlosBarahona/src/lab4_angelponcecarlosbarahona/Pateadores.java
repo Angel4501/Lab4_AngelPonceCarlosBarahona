@@ -44,15 +44,17 @@ public class Pateadores extends Jugadores{
     }
     
     @Override
-    public void Atacar(){
+    public boolean Atacar(){
         //(HP+F+HR)*0.65 * Núm. Estrellas/10
         double prob=(getHabilidadPateadora()+getFuerza()+getHabilidadRegate())*0.65*super.getNumeroEstrellas()/10;
         int ran=1+r.nextInt(100);
         if(ran>=1 && ran<=prob){
             System.out.println("¡¡¡Anotó!!!");
+            return true;
         }
         else{
             System.out.println("...No anotó...");
+            return false;
         }
     }
 
